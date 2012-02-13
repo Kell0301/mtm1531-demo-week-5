@@ -9,7 +9,7 @@ if (empty($id)) {
 
 // Only connect to the database if there is an ID, becuse this is after the above if-statement
 // Without an ID there is no point connecting to the database
-require_once '../db.php';
+require_once 'includes/db.php';
 
 // ->prepare() allows us to execute SQL with user input
 $sql = $db->prepare('
