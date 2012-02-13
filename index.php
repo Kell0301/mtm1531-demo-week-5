@@ -19,6 +19,8 @@ $results = $db->query('
 </head>
 <body>
 	
+	<a href="add.php">Add a Dinosaur!</a>
+	
 	<ul>
 	<?php
 	/*
@@ -32,6 +34,7 @@ $results = $db->query('
 		<li>
 			<a href="single.php?id=<?php echo $dino['id']; ?>"><?php echo $dino['dino_name']; ?></a>
 			&bull;
+			<a href="edit.php?id=<?php echo $dino['id']; ?>">Edit</a>
 			<a href="delete.php?id=<?php echo $dino['id']; ?>">Delete</a>
 		</li>
 	<?php endforeach; ?>
