@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Edit Dinosaur</title>
+	<title><?php echo $dino_name; ?> &middot; Edit Dinosaur</title>
 </head>
 <body>
 	
@@ -74,21 +74,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

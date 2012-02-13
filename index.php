@@ -42,20 +42,3 @@ $results = $db->query('
 	
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

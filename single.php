@@ -52,16 +52,3 @@ if (empty($results)) {
 	
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
