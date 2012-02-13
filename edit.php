@@ -1,6 +1,7 @@
 <?php
 
 require_once 'includes/filter-wrapper.php';
+require_once 'includes/db.php';
 
 $errors = array();
 
@@ -24,8 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	}
 	
 	if (empty($errors)) {
-		require_once 'includes/db.php';
-		
 		$sql = $db->prepare('
 			UPDATE dinosaurs
 			SET dino_name = :dino_name, period = :period
@@ -40,8 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		exit;
 	}
 } else {
-	require_once 'includes/db.php';
-	
 	$sql = $db->prepare('
 		SELECT id, dino_name, period
 		FROM dinosaurs
